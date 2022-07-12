@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="150dp"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
     >
 
     <androidx.cardview.widget.CardView
@@ -44,6 +45,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/ic_heart_active_button" />
 
+            <ImageView
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_delete_button" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
@@ -55,7 +66,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:text="Belt suit blazer"
-        android:textColor="@color/black"
+        android:textColor="@color/name_grey"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
@@ -66,7 +77,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="5dp"
         android:text="$120"
-        android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/item_name" />
 

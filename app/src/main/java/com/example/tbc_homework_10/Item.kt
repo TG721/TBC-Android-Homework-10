@@ -12,7 +12,5 @@ val Items = mutableListOf<Item>(
     Item("Belt suit Blazer", "$140", R.drawable.person2, "Camping"),
     Item("Belt suit Blazer", "$170", R.drawable.person3, "Category1"),
     Item("Belt suit Blazer", "$190", R.drawable.person4, "Category2")
-//    Item("Belt suit Blazer", "$170", R.drawable.person3, ),
-//    Item("Belt suit Blazer", "$190", R.drawable.person4, )
-//    Item("Belt suit Blazer", "$190", R.drawable.person4, )
+
 )
