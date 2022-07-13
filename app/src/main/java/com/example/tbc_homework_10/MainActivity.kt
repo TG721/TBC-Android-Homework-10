@@ -3,7 +3,7 @@ package com.example.tbc_homework_10
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.tbc_homework_10.databinding.ActivityMainBinding
@@ -89,5 +89,6 @@ class MainActivity : AppCompatActivity(), RecyclerViewInterface {
     override fun onDeleteButtonClick(Position: Int) {
         Items.removeAt(Position)
         adapter.notifyItemRemoved(Position)
+        Toast.makeText(this, "Deleted", Toast.LENGTH_SHORT).show()
     }
 }
