@@ -4,82 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
     android:background="@color/black_2"
-    >
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <HorizontalScrollView
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        >
+        android:layout_marginTop="20dp">
+
         <androidx.appcompat.widget.LinearLayoutCompat
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/allButton"
-            android:background="@drawable/selected_category_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="All"
-            android:layout_marginStart="10dp"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/partyButton"
-            android:background="@drawable/regular_category_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Party"
-            android:paddingStart="10dp"
-            android:drawableStart="@drawable/emoji1"
-            android:layout_marginStart="10dp"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/campingButton"
-            android:background="@drawable/regular_category_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Camping"
-            android:drawableStart="@drawable/emoji2"
-            android:paddingStart="10dp"
-            android:layout_marginStart="10dp"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/category1Button"
-            android:background="@drawable/regular_category_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Category1"
-            android:layout_marginStart="10dp"
-            />
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/allButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/selected_category_button"
+                android:text="@string/all" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/partyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/regular_category_button"
+                android:drawableStart="@drawable/emoji1"
+                android:paddingStart="10dp"
+                android:text="@string/party" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/campingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/regular_category_button"
+                android:drawableStart="@drawable/emoji2"
+                android:paddingStart="10dp"
+                android:text="@string/camping" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/category1Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/regular_category_button"
+                android:text="@string/category1" />
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/category2Button"
-                android:background="@drawable/regular_category_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Category2"
                 android:layout_marginStart="10dp"
-                />
+                android:background="@drawable/regular_category_button"
+                android:text="@string/category2" />
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/category3Button"
-                android:background="@drawable/regular_category_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Category3"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/regular_category_button"
+                android:text="@string/category3" />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </HorizontalScrollView>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/mainRecyclerview"
-        tools:listitem="@layout/item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
-
+        tools:listitem="@layout/item" />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

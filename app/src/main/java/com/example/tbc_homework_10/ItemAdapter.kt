@@ -12,6 +12,7 @@ class ItemAdapter(val Items: MutableList<Item>, val recyclerViewInterface: Recyc
 
     inner class ItemViewHolder(val binding: ItemBinding) : RecyclerView.ViewHolder(binding.root) {
         val deleteButton = binding.deleteButton
+
         init {
             deleteButton.setOnClickListener {
                 if (recyclerViewInterface != null) {
